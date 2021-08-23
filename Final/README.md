@@ -20,7 +20,7 @@ Task performed
  
 Step 1: FastAPI
 Step 2-: Authorization using Cognito
-Step 4: Streamlit to test the API
+Step 3: Streamlit to test the API
 
 
 ## Requirements
