@@ -49,12 +49,7 @@ if __name__=='__main__':
     x_test_s= "[192,192]"
     a= 10
     b= 10
-    #print(a.shape)
-    #print(b.shape)
-
-
-#SIZE=5
-#main --- read data --- loop --
+    
 
 @app.get("/")
 async def read_root():
