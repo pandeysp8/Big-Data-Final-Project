@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from enum import Enum
 import boto3
-import numpy
+import numpy as np
 import s3fs
 import h5py
 from fastapi import FastAPI, Depends
@@ -26,13 +26,13 @@ synrad_DATA = ('s3://bucket-satellite/data/synrad_testing.h5')
 def synrad_read_data(filename, rank=0, size=1, end=None,dtype=numpy.float32):
     x_keys = ['ir069','ir107','lght']
     y_keys = ['vil']
-    s = numpy.s_[rank:end:size]
+    s = np.s_[rank:end:size]
     H5PY_DEFAULT_READONLY=1
     s3 = s3fs.S3FileSystem()
     with s3.open(filename,'rb') as s3file:
         with h5py.File(s3file, 'r') as hf:
-            IN  = {k:hf[k][s].astype(numpy.float32) for k in x_keys}
-            OUT = {k:hf[k][s].astype(numpy.float32) for k in y_keys}
+            IN  = {k:hf[k][s].astype(np.float32) for k in x_keys}
+            OUT = {k:hf[k][s].astype(np.float32) for k in y_keys}
     return IN,OUT
  
 

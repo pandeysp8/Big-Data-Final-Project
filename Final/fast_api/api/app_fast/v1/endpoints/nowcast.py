@@ -19,7 +19,7 @@ async def read_now_index(Index: int):
     return {"Index": Index}
 
 
-class NowcastModelName(str, Enum):
+class NowcastModelName(str):
     mse_model = "mse_model"
     style_model = "style_model"
     mse_style_model = "mse_style_model"

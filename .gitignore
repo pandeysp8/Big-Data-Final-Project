@@ -130,4 +130,4 @@ dmypy.json
 Final/src
 Final/models
 Final/data
-Final/fast_api/Lib
+Final/fast_api/env/Lib

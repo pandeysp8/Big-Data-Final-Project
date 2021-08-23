@@ -8,8 +8,8 @@ app = FastAPI()
 
 # app = FastAPI(root_path="/prod")
 userRegion = "us-east-1"
-userClientId = "5h8nc0u0h0odaf1i9bg4ah81mk"
-userPool = "us-east-1_ahtItKV5q"
+userClientId = ""
+userPool = ""
 auth = Cognito(region= userRegion, userPoolId= userPool, client_id= userClientId)
 getUser = CognitoCurrentUser(region= userRegion, userPoolId= userPool, client_id= userClientId)
 
