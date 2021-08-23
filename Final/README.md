@@ -6,6 +6,12 @@
 
 https://codelabs-preview.appspot.com/?file_id=1kn-Tiq_mV8OgOf5_saPDB4s3bOHq9e_8_zKZNijl70c#6
 
+
+## Demo
+
+https://youtu.be/QngJYjfYMdQ
+
+
 ## About
 
 The aim of Final Project was creating APIs that outputs testing data for given index using FAST API to serve the model, authenticating the API using Cognito and then building a reference app in Streamlit. 
