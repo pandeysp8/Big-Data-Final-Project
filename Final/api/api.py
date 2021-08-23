@@ -78,7 +78,7 @@ async def read_root(text:int):
     #x_test, y_test = read_data('s3://bucket-satellite/data/synrad_testing.h5', end=11)
     return{"Input shape": x_test_n, "Output Shape":y_test_n, "Input": x_data_n}
 
-client = boto3.client('s3', aws_access_key_id='AKIARRCUX3UHKNYFQFFM', aws_secret_access_key='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')
+client = boto3.client('s3', aws_access_key_id='', aws_secret_access_key='')
 client._request_signer.sign = (lambda *args, **kwargs: None)
 
 def handler(event, context):
